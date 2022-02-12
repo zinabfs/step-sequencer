@@ -44,3 +44,5 @@ const KICK_GRID = {
     oscillator: 'sine',
     synthtype: new Tone.MembraneSynth()
 };
+
+const bebou ='<3333';
