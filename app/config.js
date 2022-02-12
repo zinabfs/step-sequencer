@@ -25,7 +25,7 @@ const MAIN_GRID = {
     ],
     idGrid: '#grid',
     gridHeight: 14,
-    gridWidth: 12,
+    gridWidth: 16,
     pitches: ['C3', 'D3', 'E3', 'F3', 'G3', 'A3', 'B3', 'C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4'],
     oscillator: 'sine',
     synthtype: new Tone.Synth()
@@ -39,7 +39,7 @@ const KICK_GRID = {
     ],
     idGrid: '#kick',
     gridHeight: 3,
-    gridWidth: 12,
+    gridWidth: 16,
     pitches: ['C1', 'B2', 'E5'],
     oscillator: 'sine',
     synthtype: new Tone.MembraneSynth()
