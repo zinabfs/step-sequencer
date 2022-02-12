@@ -69,7 +69,7 @@ function updateSequencer(config){
 }
 
 Tone.Transport.scheduleRepeat(time=>{
-    let step = index % 16;
+    let step = index % MAIN_GRID.gridWidth;
 
     for (let i=0; i< mainGrid.getRows().length; i++){
         let synth = synths(MAIN_GRID)[i],
@@ -89,7 +89,7 @@ Tone.Transport.scheduleRepeat(time=>{
 
 
 Tone.Transport.scheduleRepeat(time =>{
-    let step2 = index2 % 16;
+    let step2 = index2 % KICK_GRID.gridWidth;
 
     for (let i=0; i< kickGrid.getRows().length; i++){
         let synth = synths(KICK_GRID)[i],
