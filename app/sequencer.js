@@ -58,8 +58,7 @@ function playPause(){
         if (playing === false){
             startMelody();
             document.querySelector(".playpauseBtn").innerHTML="stop";
-        } else
-        {
+        } else {
             stopMelody();
             document.querySelector(".playpauseBtn").innerHTML="start";
         }})
