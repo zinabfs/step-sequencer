@@ -45,4 +45,3 @@ const KICK_GRID = {
     synthtype: new Tone.MembraneSynth()
 };
 
-const bebou ='<3333';
