@@ -110,3 +110,11 @@ audio {
 .pink{
     background-color: #ed3883;
 }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    color: #9163cb;
+    text-align: center;
+}
