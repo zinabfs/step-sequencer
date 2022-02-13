@@ -1,9 +1,7 @@
 const SYNTH_CONFIG = {
-    gain: 0.04,
     oscillator: 'sine2',
     interval: '8n',
     colors: ['purple','blue','turquoise','green','yellow','orange','pink','purple','blue','turquoise','green','yellow','orange','pink'],
-
 };
 
 const MAIN_GRID = {
@@ -26,7 +24,22 @@ const MAIN_GRID = {
     idGrid: '#grid',
     gridHeight: 14,
     gridWidth: 16,
-    pitches: ['C3', 'D3', 'E3', 'F3', 'G3', 'A3', 'B3', 'C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4'],
+    pitches: [
+        'B4',
+        'A4',
+        'G4',
+        'F4',
+        'E4',
+        'D4',
+        'C4',
+        'B3',
+        'A3',
+        'G3',
+        'F3',
+        'E3',
+        'D3',
+        'C3'
+    ],
     oscillator: 'sine',
     synthtype: new Tone.Synth()
 };
@@ -40,9 +53,12 @@ const KICK_GRID = {
     idGrid: '#kick',
     gridHeight: 3,
     gridWidth: 16,
-    pitches: ['C1', 'B2', 'E5'],
+    pitches: [
+        'C1',
+        'B2',
+        'E5'
+    ],
     oscillator: 'sine',
     synthtype: new Tone.MembraneSynth()
 };
 
-const bebou ='<3333';

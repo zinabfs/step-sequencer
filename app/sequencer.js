@@ -1,4 +1,4 @@
-const gain = new Tone.Gain(0.1);
+const gain = new Tone.Gain(0.2);
 gain.toDestination();
 let index = 0;
 let index2 = 0;
@@ -117,7 +117,7 @@ const recorder = new MediaRecorder(dest.stream);
 
 
 recorder.ondataavailable = evt => chunks.push(evt.data);
-recorder.onstop = evt => {
+recorder.onstop = () => {
     let blob = new Blob(chunks, { type: 'audio/ogg; codecs=opus' });
     audio.src = URL.createObjectURL(blob);
 };
