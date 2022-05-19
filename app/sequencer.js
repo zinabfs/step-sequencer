@@ -85,9 +85,6 @@ Tone.Transport.scheduleRepeat(time=>{
     index++;
 }, SYNTH_CONFIG.interval);
 
-
-
-
 Tone.Transport.scheduleRepeat(time =>{
     let step2 = index2 % KICK_GRID.gridWidth;
 

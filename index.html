@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Music Maker</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
     <script src="https://unpkg.com/tone"></script>
     <script src="app/config.js"></script>
 
@@ -16,7 +16,7 @@
 
 <h1>Music Maker</h1>
 
-<button class="playpauseBtn" >
+<button class="playpauseBtn">
     start
 </button>
 
@@ -25,30 +25,29 @@
 <div class="grid" id="kick"></div>
 
 
-
-
 <div class="flex">
     <button class="clear">clear tiles</button>
     <button class="reset-bpm">reset bpm</button>
 
 
-
-<div class="slidecontainer">
-    <input type="range" min="70" max="200" value="120" class="slider tempo" id="tempo">
-    <label  id="value" for="tempo"></label>
-</div>
+    <div class="slidecontainer">
+        <input class="slider tempo" id="tempo" max="200" min="70" type="range" value="120">
+        <label for="tempo" id="value"></label>
+    </div>
 </div>
 
 <div class="flex">
 
 
-<select name="synth" id="synth-selected">
-    <option value="sine">sine</option>
-    <option value="triangle">triangle</option>
-    <option value="square">square</option>
-</select>
+    <select id="synth-selected" name="synth">
+        <option value="sine">sine</option>
+        <option value="triangle">triangle</option>
+        <option value="square">square</option>
+    </select>
 
-    <label for="synth-selected"><button id="type">select type</button></label>
+    <label for="synth-selected">
+        <button id="type">select type</button>
+    </label>
 
     <div class="flex">
         <audio controls></audio>
